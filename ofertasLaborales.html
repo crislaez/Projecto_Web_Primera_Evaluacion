@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WebCristian</title>
+
+    <!-- font-awesome  -->
+    <script src="https://kit.fontawesome.com/43bc3c0658.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/miga.css">
+    <link rel="stylesheet" href="css/section.css">
+    <link rel="stylesheet" href="css/aside.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <!-- j-query  -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+    <!-- js -->
+    <script src="js/datos.js"></script>
+    <script>
+        window.addEventListener('load', function () {
+            paginaOfetaLaboral('http://localhost:8088/cristian/NuevoPaginaFinalEvaluacion/json/datos.json', 1);
+            activarBoton();
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index1.html"><img src="img/logo2.png" alt="logo"></a>
+        </div>
+        <div class="titulo">
+            <h1>EMPLEOS CRISTIAN</h1>
+            <h2>LAS MEJORES FORMA DE BUSCAR EMPLEO</h2>
+        </div>
+        <div class="imagen">
+            <img src="img/fotoTrabajo.jpeg" alt="camisetaLogo">
+        </div>
+        <div class="imagenesMovibles">
+            <ul>
+                <li><img src="img/banner1.png" alt="baner1"></li>
+                <li><img src="img/banner2.jpg" alt="baner2"></li>
+                <li><img src="img/banner3.jpg" alt="baner3"></li>
+                <li><img src="img/banner4.jpg" alt="baner4"></li>
+            </ul>
+        </div>
+        <div class="menu">
+            <label for="check"><i class="fas fa-bars"></i></label><input type="checkbox" name="check" id="check">
+        </div>
+        <nav>
+            <a href="index1.html">
+                <li id="liUno">INICIO <span>&gt;</span></li>
+            </a>
+            <a href="#">
+                <li>OFERTAS LABORALES</li>
+            </a>
+        </nav>
+    </header>
+
+    <section id="sections">
+        <div class="submenu">
+            <a href="#">Ofertas Laborales</a>
+            <a href="ofertasFormativas.html">Ofertas Formativas</a>
+            <a href="sobreNosotros.html">Sobre Nosotros</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="estadisticas.html">Estadisticas</a>
+        </div>
+
+    </section>
+
+    <aside>
+        <div class="subDivAside">
+            <h2>Videos de Interes</h2>
+        </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Qhf3Gf8IBUg" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/sd_2nbzzbQ4" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/nP0g0zVYJIg" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </aside>
+
+    <footer>
+        <div class="footer1">
+            <h3>CONTACTO</h3>
+            <p><a href="https://www.gmail.com">cristian.pelaezpe@elorrieta-errekamari.com</a></p>
+        </div>
+
+        <div class="footer1">
+            <h3>SIGUENOS</h3>
+            <p>
+                <div id="im1" class="imagen"></div> <a href="https://www.facebook.com">Facebook</a>
+            </p>
+            <p>
+                <div id="im2" class="imagen"></div><a href="https://www.instagram.com">Instagram</a>
+            </p>
+            <p>
+                <div id="im3" class="imagen"></div><a href="https://www.twitter.com">Twitter</a>
+            </p>
+        </div>
+
+        <div class="footer1">
+            <h3>SOPORTE</h3>
+            <p><a href="#">Aviso legal</a></p>
+            <p><a href="#">Politica de cookies</a></p>
+            <p><a href="#">Politica de provacidad</a></p>
+        </div>
+
+        <div class="footer2">
+            <h3>PAGOS</h3>
+            <p><i class="fab fa-cc-paypal"></i></p>
+            <p><i class="fab fa-cc-mastercard"></i></p>
+            <p><i class="fab fa-cc-visa"></i></p>
+            <p><i class="fab fa-cc-apple-pay"></i></p>
+        </div>
+
+    </footer>
+
+<

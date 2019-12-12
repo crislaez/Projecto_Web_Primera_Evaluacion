@@ -1,0 +1,163 @@
+@font-face{
+	font-family: "yanone";
+	src: url("../fonts/yanone.ttf");
+}
+@font-face{
+	font-family: "finger";
+	src: url("../fonts/finger.ttf");
+}
+@font-face{
+	font-family: "PokemonHollow";
+	src: url("../fonts/PokemonHollow.ttf");
+}
+@font-face{
+	font-family: "PokemonSolid";
+	src: url("../fonts/PokemonSolid.ttf");
+}
+@font-face{
+	font-family: "EnchantedLand";
+	src: url("../fonts/EnchantedLand.otf");
+}
+@font-face{
+	font-family: "titilium";
+	src: url("../fonts/titilium.ttf");
+}
+@font-face{
+	font-family: "fullPack";
+	src: url("../fonts/fullPack.ttf");
+}
+caption{
+  font-family: titilium;
+}
+*{
+  margin:0px;
+  padding:0px;
+}
+header{
+  width: 100%;
+  height: 550px;
+  border: 1px solid black;
+  float:left;
+}
+.logo{
+  width: 15%;
+  height: 120px;
+  background: #507599;
+  float:left;
+}
+.logo img{
+  width: 100%;
+  height: 120px;
+}
+.titulo{
+  width: 70%;
+  height: 120px;
+  float: left; 
+  background: #507599;
+}
+.titulo h1{
+  font-family: fullPack;
+  font-size: 30px;
+  color:white;
+  text-shadow: 3px 3px 3px grey;
+  letter-spacing: 10px;
+  text-align: center;
+  margin-top: 1em;
+}
+.titulo h2{
+  text-align: center;
+  margin-top: 1em;
+  font-size: 20px;
+  color:white;
+  
+}
+.imagen{
+  width: 15%;
+  height: 120px;
+  float:left;
+
+}
+.imagen img{
+  width: 910%;
+  height: 120px;
+}
+.imagenesMovibles{  
+  width: 100%;
+  height: 350px;
+  transition: all 300ms;
+  overflow: hidden;
+  float: left;
+}
+
+.imagenesMovibles ul{
+  padding: 0px;
+  display: flex;  
+  width: 400%;
+  animation: animacion 20s infinite alternate;
+}
+
+.imagenesMovibles li{
+  width: 100%;
+  list-style: none;
+  
+}
+.imagenesMovibles img{
+  width: 100%;
+  height: 350px;
+}
+.menu{
+  width: 10%;
+  height: 80px;
+  background: #507599;
+  float: left;
+}
+.menu label{
+  font-size: 40px;
+  margin-left: 30%;
+  margin-top: 0.5em;
+  cursor:pointer;
+  color: white;
+  float: left;
+}
+.menu input{
+  display: none;
+}
+nav{
+  background: #507599;
+  width: 90%;
+  height: 80px;
+  float: left;
+}
+nav li{
+  display: inline-block;
+  padding:31px 20px;
+ cursor: pointer;
+  transition: all 300ms;
+}
+nav li:hover{
+  background:#3a6287;
+}
+nav li a{
+  color: white;
+  text-decoration: none;
+}
+nav a{
+  color: white;
+  text-decoration: none;
+}
+#liUno{
+  margin-left: 28%;
+}
+@keyframes animacion{
+  0%{margin-left:0%}
+20%{margin-left:0%}
+
+ 25%{margin-left:-100%}
+45%{margin-left:-100%}
+
+ 50%{margin-left:-200%}
+70%{margin-left:-200%}
+
+ 75%{margin-left:-300%}
+100%{margin-left:-300%}    
+}
