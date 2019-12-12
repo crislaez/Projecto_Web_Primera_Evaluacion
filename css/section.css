@@ -29,10 +29,12 @@ section{
   background: #3a6287;
 }
 .divTituloNoticia{
-  width: 90%;
-  margin-left: 5%;
+  width: 96%;
+  margin-left: 2%;
   height: 100px;
-  background: #507599;
+  margin-top: 1em;
+  background:#507599;
+  box-shadow: 7px 7px 3px black;
   float: left;
 }
 .divTituloNoticia h2{
