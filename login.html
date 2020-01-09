@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- css  -->
+    <link rel="stylesheet" href="css/registro.css">
+    <!-- jquery  -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- js  -->
+    <script src="js/formulario.js"></script>
+    <script>
+        window.addEventListener('load', function () {
+            
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            comprobarLogin();
+           $(".divFormulario").fadeIn(1000);
+
+        });
+    </script>
+
+</head>
+
+<body>
+    <section>
+        <div class="divTitulo">
+            <h2>LOGEATE</h2>
+        </div>
+
+        <div class="divFormulario">
+            <form id="login" class="formulario" action="" method="">
+               
+                <div id="divInpLogin" >
+                    <img src="img/login.png" alt="">
+                </div>
+
+                <!-- <label for="nombre">Nombre:</label><br> -->
+                <input class="inp" type="email" name="email" id="email_1" placeholder="correo..."><br>
+                <!-- <label for="apellido">Apellido:</label><br> -->
+                <input class="inp" type="password" name="clave" id="calve_1" placeholder="clave..."><br>
+
+                <input class="boton" type="submit" value="Login">
+                <input class="boton" type="reset" value="Volver">
+            </form>
+        </div>
+
+    </section>
+</body>
+
+</html>

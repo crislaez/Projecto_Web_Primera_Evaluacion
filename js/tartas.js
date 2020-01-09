@@ -34,7 +34,6 @@ function tarta1(variable) {
 
 function tarta2(variable) {
   am4core.ready(function () {
-
     // Themes begin
     am4core.useTheme(am4themes_animated);
     // Themes end
@@ -56,7 +55,7 @@ function tarta2(variable) {
 
     chart.legend = new am4charts.Legend();
 
-  }); // end am4core.ready()
+  }); 
 }
 
 function formularioProvincia() {
@@ -67,21 +66,17 @@ function formularioProvincia() {
   formProv.addEventListener('submit', function () {
     event.preventDefault();
     console.log(select[0].value);
-    if (select[0].value) {
-      $(document).ready(function () {
-        $.ajax({
-          type: 'GET',
-          url: 'php/prueba.php?prov=' + select[0].value,
-          // data:select[0].value,
-          success: function (response) {
-            console.log(response);
-            tarta2(JSON.parse(response));
-
-          }
-        })
-
-        $('#chartdiv2').css('display', 'block');
+    if (select[0].value) {      
+      $.ajax({
+        type: 'GET',
+        url: 'php/prueba.php?prov=' + select[0].value,
+        // data:select[0].value,
+        success: function (response) {
+          console.log(response);
+          tarta2(JSON.parse(response));
+        }
       })
+      $('#chartdiv2').css('display', 'block');    
     }
   })
 }

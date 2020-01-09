@@ -16,39 +16,33 @@
     <link rel="stylesheet" href="css/section.css">
     <link rel="stylesheet" href="css/aside.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/tartas.css">
+    <link rel="stylesheet" href="css/pokemon.css">
 
     <!-- j-query  -->
     <script src="js/jquery-3.3.1.min.js"></script>
 
     <!-- js -->
     <script src="js/datos.js"></script>
-    <script src="js/tartas.js"></script>
     <script src="js/formulario.js"></script>
+    <script src="js/apiPokemon.js"></script>
     <script>
         window.addEventListener('load', function () {
             activarBoton();
-            // formularioProvincia();
+            cargarDatosApi();
             cambiarALogin();
         });
     </script>
     <script>
         $(document).ready(function () {
-            formularioProvincia();
             $("body").fadeIn('slow');
         });
     </script>
-    <!-- Resources -->
-    <script src="https://www.amcharts.com/lib/4/core.js"></script>
-    <script src="https://www.amcharts.com/lib/4/charts.js"></script>
-    <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
-
 </head>
 
 <body>
     <header>
         <div class="logo">
-            <a href="index1.html"><img src="img/logo2.png" alt="logo"></a>
+            <a href="#"><img src="img/logo2.png" alt="logo"></a>
         </div>
         <div class="titulo">
             <h1>EMPLEOS CRISTIAN</h1>
@@ -73,7 +67,7 @@
                 <li id="liUno">INICIO <span><i class="fas fa-chevron-right"></i></span></li>
             </a>
             <a href="#">
-                <li>ESTADISTICAS</li>
+                <li>POKEMON</li>
             </a>
         </nav>
         <div class="divRegistro">
@@ -91,8 +85,8 @@
             <a href="ofertasFormativas.html">Ofertas Formativas</a>
             <a href="sobreNosotros.html">Sobre Nosotros</a>
             <a href="contacto.html">Contacto</a>
-            <a href="pokemon.html">Pokemon </a>
-            <a href="#">Lorem Ipsum </a>
+            <a href="estadisticas.html">Estadisticas</a>
+            <a href="#">Pokemon </a>
             <a href="#">Lorem Ipsum </a>
             <a href="#">Lorem Ipsum </a>
             <a href="#">Lorem Ipsum </a>
@@ -112,52 +106,44 @@
         </div>
 
         <div class="divTituloNoticia">
-            <h2>ESTADISTICAS</h2>
+            <h2>Pokemon</h2>
         </div>
 
-        <article id="chartdiv">
-
-        </article>
-
-        <form id="formProv" action="" method="">
-            <label for="provincia">Seleccione Provincia:</label>
-            <select name="prov">
-                <option value="1">Andalucía</option>
-                <option value="2">Aragón</option>
-                <option value="3">Principado de Asturias</option>
-                <option value="4">Illes Balears</option>
-                <option value="5">Canarias</option>
-                <option value="6">Cantabria</option>
-                <option value="7">Castilla y León</option>
-                <option value="8">Castilla-La Mancha</option>
-                <option value="9">Cataluña</option>
-                <option value="10">Extremadura</option>
-                <option value="11">Galicia</option>
-                <option value="12">Comunidad de Madrid</option>
-                <option value="13">Región de Murcia</option>
-                <option value="14">Comunidad Foral de Navarra</option>
-                <option value="15">País Vasco</option>
-                <option value="16">La Rioja</option>
-                <option value="17">Comunitat Valenciana</option>
-                <option value="18">Ceuta</option>
-                <option value="19">Melilla</option>
-
-            </select>
-            <input type="submit" value="Mostrar">
+        <form id="formPoke" action="" method="" enctype="">
+            <fieldset>
+                <input type="text" name="buscador" placeholder="introdudca un pokemon...">
+                <button type="submit">  <i class="fas fa-search"></i></button>
+            </fieldset>
         </form>
 
-        <article id="chartdiv2" class="tarta">
+        <article class="articuloPokemon">
+            <h2>POKEMON</h2>
 
+            <div class="divImg">
+                <img src="img/imgPokemon.jpg" alt="poke">
+            </div>
+
+            <div class="divImg">
+                <img src="img/imgPokemon.jpg" alt="poke">
+            </div>
+
+            <div class="ataque">
+                <h3>Atackes</h3>
+            </div>
+            
+            <select>
+
+            </select>
+                        
         </article>
+
     </section>
 
     <aside>
         <div class="subDivAside">
             <h2>Videos de Interes</h2>
         </div>
-        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/Qhf3Gf8IBUg" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-            <canvas id="canvas" width="560" height="315"></canvas>
+        <canvas id="canvas" width="560" height="315"></canvas>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/sd_2nbzzbQ4" frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/nP0g0zVYJIg" frameborder="0"
@@ -201,7 +187,6 @@
 
         <script src="js/reloj.js"></script>
     </footer>
-
 </body>
 
 </html>

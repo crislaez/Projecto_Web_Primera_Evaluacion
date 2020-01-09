@@ -6,6 +6,7 @@
 .articulos2{
     width: 44%;
     height: 450px;
+    /* margin-left: 5%; */
 }
 .articulos2 .div{
     width: 100%;
@@ -77,3 +78,6 @@
 .articulos2:hover{
     transform: scale(1.05 ,1.05);
  }
+.articulos1{
+    /* margin-left: 5%; */
+}

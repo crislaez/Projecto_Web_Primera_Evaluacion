@@ -26,6 +26,9 @@
 	font-family: "fullPack";
 	src: url("../fonts/fullPack.ttf");
 }
+/* body{
+  background-image: url('../img/fondoPortatil3.jpg');
+} */
 caption{
   font-family: titilium;
 }
@@ -71,14 +74,14 @@ header{
   color:white;
   
 }
-.imagen{
+.imagenLogo{
   width: 15%;
   height: 120px;
   float:left;
 
 }
-.imagen img{
-  width: 910%;
+.imagenLogo img{
+  width: 100%;
   height: 120px;
 }
 .imagenesMovibles{  
@@ -124,7 +127,7 @@ header{
 }
 nav{
   background: #507599;
-  width: 90%;
+  width: 75%;
   height: 80px;
   float: left;
 }
@@ -144,6 +147,29 @@ nav li a{
 nav a{
   color: white;
   text-decoration: none;
+}
+.divRegistro{
+  width: 15%;
+  height: 80px;
+  background: #507599;
+/*    background: red; */
+  float: left;
+}
+.divRegistro a{
+  color: white;
+/*   padding:12px 12px; */
+  height: 50px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.divRegistro a:hover{
+  background:#3a6287;
+}
+.divRegistro i{
+   color: white;
+}
+.enlaces{
+  margin-top: 2em;
 }
 #liUno{
   margin-left: 28%;

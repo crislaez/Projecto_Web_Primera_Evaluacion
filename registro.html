@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- css  -->
+    <link rel="stylesheet" href="css/registro.css">
+    <!-- jquery  -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- js  -->
+    <script src="js/formulario.js"></script>
+    <script>
+        window.addEventListener('load', function () {
+            validarFormulario();
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".divFormulario").fadeIn(1000);
+        });
+    </script>
+
+</head>
+
+<body>
+    <section>
+        <div class="divTitulo">
+            <h2>REGISTRATE PARA FORMAR PARTE DE NOSOTROS</h2>
+        </div>
+
+        <div class="divFormulario">
+            <form id="registro" class="formulario" action="" method="">
+                <!-- <label for="nombre">Nombre:</label><br> -->
+                <input class="inp" type="text" name="nombre" id="nombre" placeholder="nombre..."
+                    pattern="[A-Za-z]+"><br>
+
+                <!-- <label for="apellido">Apellido:</label><br> -->
+                <input class="inp" type="text" name="apellido" id="apellido" placeholder="apellido..."
+                    pattern="[A-Za-z]+"><br>
+
+                <!-- <label for="fecha">Fecha de nacimientio:</label><br> -->
+                <input class="inp" type="date" name="fecha" id="fecha"><br>
+
+                <!-- <label for="email">Email:</label><br> -->
+                <input class="inp" type="email" name="email" id="email" placeholder="email..."><br>
+
+                <!-- <label for="sexo">Sexo:</label><br> -->
+                <select class="inp" name="sexo" id="sexo">
+                    <option value="hombre">Hombre</option>
+                    <option value="mujer">Mujer</option>
+                </select><br>
+
+                <!-- <label for="clave">Clave:</label><br> -->
+                <input class="inp" type="password" name="clave" id="clave" placeholder="clave..."><br>
+
+                <!-- <label for="rClave">Repetil Clave:</label><br> -->
+                <input class="inp" type="password" name="rClave" id="rclave" placeholder="repetir clave..."><br>
+
+                <input class="boton" type="submit" value="Enviar">
+                <input class="boton" type="reset" value="Volver">
+            </form>
+        </div>
+
+    </section>
+</body>
+
+</html>

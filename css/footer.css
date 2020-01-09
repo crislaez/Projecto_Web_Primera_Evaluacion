@@ -1,67 +1,67 @@
 footer{
-    width: 100%;
-    height: 150px;
-    border: 1px solid black;
-    margin-top: 1em;
-    background: #507599;
+  width: 100%;
+  height: 160px;
+  border: 1px solid black;
+  margin-top: 1em;
+  background: #507599;
+  float: left;
+}
+.articulos1:hover{
+  transform: scale(1.05 ,1.05);
+}
+.footer1{
+ width: 25%;
+ height: 150px;
+ background: #507599;
+ color: white;
+ float: left;
+}
+.footer2{
+ width: 25%;
+ height: 150px;
+ background: #507599;
+ color: white;
+ float: left;
+}
+footer h3{
+  text-align: center;
+  }
+  footer p{
+    text-align: center;
+    transition: all 300ms;
+    cursor: pointer;
+    margin: 13px;
+  }
+  footer a{
+    color: white;
+    text-decoration: none;
+  }
+  footer p:hover{
+    color: grey;
+  }
+  footer a:hover{
+    color: grey;
+  }
+  .imagen{
+    background: red;
+    width: 25px;
+    height: 25px;
+    margin-right: 3%;
     float: left;
   }
-.articulos1:hover{
-    transform: scale(1.05 ,1.05);
- }
- .footer1{
-   width: 25%;
-   height: 150px;
-   background: #507599;
-   color: white;
-   float: left;
- }
- .footer2{
-   width: 25%;
-   height: 150px;
-   background: #507599;
-   color: white;
-   float: left;
- }
-footer h3{
-    text-align: center;
-    }
-    footer p{
-      text-align: center;
-      transition: all 300ms;
-      cursor: pointer;
-      margin: 13px;
-    }
-    footer a{
-      color: white;
-      text-decoration: none;
-    }
-    footer p:hover{
-      color: grey;
-    }
-    footer a:hover{
-      color: grey;
-    }
-    .imagen{
-      background: red;
-      width: 25px;
-      height: 25px;
-      margin-right: 3%;
-      float: left;
-    }
-    .footer1 div{
-      margin-left:35%; 
-    }
-    #im1{
-      background-image: url(../img/sprites.jpg);
-      background-position: -91px -19px;
-    }
-    #im2{
-       background-image: url(../img/sprites.jpg);
-      background-position: -29px -19px;
-    }
-    #im3{
-      background-image: url(../img/sprites.jpg);
-      background-position: -220px -19px;
-    }
-    
+  .footer1 div{
+    margin-left:35%; 
+  }
+  #im1{
+    background-image: url(../img/sprites.jpg);
+    background-position: -91px -19px;
+  }
+  #im2{
+     background-image: url(../img/sprites.jpg);
+    background-position: -29px -19px;
+  }
+  #im3{
+    background-image: url(../img/sprites.jpg);
+    background-position: -220px -19px;
+  }
+  

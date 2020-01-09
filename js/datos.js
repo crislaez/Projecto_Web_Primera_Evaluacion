@@ -1,9 +1,6 @@
 'use strict';
 
-function paginaOfetaLaboral(texto, num) {
-
-    $(document).ready(function () {
-
+function paginaOfetaLaboral(texto, num) {        
         let sections = $('#sections');
         let sections2 = $('#sections2');
 
@@ -19,7 +16,7 @@ function paginaOfetaLaboral(texto, num) {
                 }
                 else if (num == 3) {
                     mostrarNoticias(response)
-                }
+                }               
             }
         })
 
@@ -36,8 +33,8 @@ function paginaOfetaLaboral(texto, num) {
                     <p class="url"><a href="${datos[valor].url}">Enlace</a></p>
                 </article>
                 `
-                sections.append(aux);
-            }
+                sections.append(aux);            
+            }           
         }
 
         function mostrarDatosOfetas(datos) {
@@ -106,7 +103,6 @@ function paginaOfetaLaboral(texto, num) {
         }
 
         function mostrarNoticias(datos) {
-
             for (let valor in datos) {
                 let aux =
                     `<article class="noticias">
@@ -118,9 +114,7 @@ function paginaOfetaLaboral(texto, num) {
                     `;
                 sections.append(aux);
             }
-        }
-    })
-
+        }    
 }
 
 function activarBoton() {
@@ -136,7 +130,6 @@ function activarBoton() {
         }
     })
 }
-// validarFormulario();
 
 function validarFormulario() {
     var formulario = document.querySelector('#formulario');
@@ -145,6 +138,7 @@ function validarFormulario() {
 
     formulario.addEventListener('submit', eventoFormulario);
     
+    //evento del formulario
     function eventoFormulario() {
         event.preventDefault();
         if (!input[0].value) {
@@ -171,3 +165,4 @@ function validarFormulario() {
         }
     }
 }
+

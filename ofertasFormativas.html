@@ -23,10 +23,18 @@
 
     <!-- js -->
     <script src="js/datos.js"></script>
+    <script src="js/formulario.js"></script>
     <script>
         window.addEventListener('load', function () {
-            paginaOfetaLaboral('http://localhost:8088/cristian/NuevoPaginaFinalEvaluacion/json/datos2.json', 2);
+          
             activarBoton();
+            cambiarALogin();
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            paginaOfetaLaboral('http://localhost:8088/cristian/NuevoPaginaFinalEvaluacion/json/datos2.json', 2);
+            $("body").fadeIn('slow');
         });
     </script>
 </head>
@@ -40,7 +48,7 @@
             <h1>EMPLEOS CRISTIAN</h1>
             <h2>LAS MEJORES FORMA DE BUSCAR EMPLEO</h2>
         </div>
-        <div class="imagen">
+        <div class="imagenLogo">
             <img src="img/fotoTrabajo.jpeg" alt="camisetaLogo">
         </div>
         <div class="imagenesMovibles">
@@ -62,6 +70,13 @@
                 <li>OFERTA FORMATIVAS</li>
             </a>
         </nav>
+        <div class="divRegistro">
+            <div class="enlaces">
+                <a href="registro.html">REGISTRO</a>
+                <i class="fas fa-grip-lines-vertical"></i>
+                <a id="log" href="login.html">LOGIN</a>
+            </div>
+        </div>
     </header>
 
     <section id="sections2">
@@ -71,6 +86,23 @@
             <a href="sobreNosotros.html">Sobre Nosotros</a>
             <a href="contacto.html">Contacto</a>
             <a href="estadisticas.html">Estadisticas</a>
+            <a href="pokemon.html">Pokemon </a>
+            <a href="#">Lorem Ipsum </a>
+            <a href="#">Lorem Ipsum </a>
+            <a href="#">Lorem Ipsum </a>
+            <a href="#">Lorem Ipsum </a>
+            <a href="#">Lorem Ipsum </a>
+            <a href="#">Lorem Ipsum </a>
+            <a href="#">Lorem Ipsum </a>
+            <a href="#">Lorem Ipsum </a>
+            <a href="#">Lorem Ipsum </a>
+            <a href="#">Lorem Ipsum </a>
+            <a href="#">Lorem Ipsum </a>
+            <a href="#">Lorem Ipsum </a>
+            <a href="#">Lorem Ipsum </a>
+            <a href="#">Lorem Ipsum </a>
+            <a href="#">Lorem Ipsum </a>
+            <a href="#">Lorem Ipsum </a>
         </div>
 
         <div class="divTituloNoticia">
@@ -84,8 +116,9 @@
             <h2>Videos de Interes</h2>
         </div>
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Qhf3Gf8IBUg" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/Qhf3Gf8IBUg" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+            <canvas id="canvas" width="560" height="315"></canvas>
 
 
         <iframe width="560" height="315" src="https://www.youtube.com/embed/sd_2nbzzbQ4" frameborder="0"
@@ -131,7 +164,7 @@
             <p><i class="fab fa-cc-apple-pay"></i></p>
         </div>
 
-
+        <script src="js/reloj.js"></script>
     </footer>
 </body>
 

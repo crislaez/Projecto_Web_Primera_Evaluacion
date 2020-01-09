@@ -1,0 +1,80 @@
+@font-face{
+	font-family: "yanone";
+	src: url("../fonts/yanone.ttf");
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+section{ 
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/fondoPortatil3.jpg');
+}
+section img{
+    width: 100%;
+    height: 100vh;
+  
+}
+.divTitulo{
+   width: 50%;
+    height: 50px;
+    margin-top: 1em;
+    margin-left: 24%;
+    float: left;    
+}
+.divTitulo h2{
+    color: white;
+    text-shadow: 2px 2px 3px grey;
+    text-align: center;
+}
+.divFormulario {
+    display:none;
+    width: 50%;
+    height: 600px;
+    background: white;
+    margin-top: 2em;
+    margin-left: 24%;
+    border-radius: 2%;  
+    float: left;
+}
+.formulario{
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    color: #575757;
+   
+}
+.formulario .inp{
+    width: 50%;
+    height: 40px;
+    margin-top: 30px;
+    margin-left: 25%;
+    box-shadow: 7px 7px 3px #bdbdbd;
+    cursor: pointer;
+    transition: all 300ms;
+}
+.formulario .inp:hover{
+    width: 60%;
+    margin-left: 20%;
+}
+.formulario .boton{
+    width: 20%;
+    height: 50px;
+    margin-left: 20%;
+    margin-top: 1em;
+    background: #507599;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+     box-shadow: 7px 7px 3px #bdbdbd;
+}
+#divInpLogin{
+    width: 20%;
+    height: 150px;
+    margin-left: 40%;
+    margin-top: 2em;
+}
+#divInpLogin img{
+    width: 100%;
+    height: 150px;
+}
